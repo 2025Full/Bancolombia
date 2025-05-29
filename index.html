@@ -1,10 +1,12 @@
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>NequiBotGV - Generador</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -114,6 +116,9 @@
       top: calc((515px) * var(--escala)); 
       left: calc((40px) * var(--escala)); 
       width: calc(280px * var(--escala)); 
+      white-space: nowrap; /* Asegura que siempre sea una sola línea */
+      overflow: hidden; /* Oculta el desbordamiento si es necesario */
+      text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
     }
     #nequi { 
       top: calc((610px) * var(--escala)); 
@@ -356,3 +361,4 @@ function descargarComprobante(formato) {
 </script>
 </body>
 </html>
+```
